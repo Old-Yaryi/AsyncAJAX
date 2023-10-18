@@ -1,0 +1,102 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    margin: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.countries {
+    display: flex;
+    font-size: 1.8rem;
+    opacity: 0;
+    transition: opacity 1.5s;
+    flex-wrap: wrap;
+}
+.country {
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+    font-size: 1.6rem;
+    width: 35rem;
+    border-radius: 0.8rem;
+    margin: 0 4rem;
+    margin-bottom: 4rem;
+}
+.country__img {
+    width: 35rem;
+    height: 17rem;
+    object-fit: cover;
+    background-color: rgb(230, 230, 230);
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+.country__container {
+    display: flex;
+    background-color: antiquewhite;
+    margin-top: -10px;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+}
+.country__data {
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+}
+.country__data p {
+    display: inline-block;
+}
+.country__data  p span {
+    margin-right: 15px;
+    width: 35px;
+    display: inline-block;
+}
+.country__name {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem;
+}
+.country__region {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.country__row {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.country__coat {
+    width: 10rem;
+    display: flex;
+    align-items: center;
+}
+.country__coat-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.neighbour {
+    transform: scale(0.7) translateY(1rem);
+    margin-left: 0;
+}
+.neighbour::before {
+    content: "Соседняя страна";
+    width: 100%;
+    position: absolute;
+    top: -5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(128, 128, 128);
+}
